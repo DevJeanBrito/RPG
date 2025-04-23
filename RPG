@@ -1,1 +1,63 @@
 
+PLANO DE DESENVOLVIMENTO: SISTEMA DE BIOMAS COM BUFFS
+📦 Módulo 1: Estrutura básica do bioma
+Objetivo: Criar a classe Bioma e definir os atributos principais.
+
+Tarefas:
+
+ Criar classe Bioma com:
+
+nome do bioma
+
+lista de inimigos nativos
+
+mapa de modificadores de atributo (ex: dano, defesa)
+
+ Criar métodos:
+
+aplicarBuff(Inimigo inimigo)
+
+removerBuff(Inimigo inimigo)
+
+👹 Módulo 2: Atualização da classe Inimigo
+Objetivo: Preparar o inimigo para responder aos buffs de bioma.
+
+Tarefas:
+
+ Adicionar atributo habitatNatural na classe Inimigo
+
+ Adicionar método aplicarBuffBioma(Bioma b)
+
+ Criar um mecanismo para resetar os buffs após o combate (ex: resetarBuffs())
+
+🧪 Módulo 3: Integração com sistema de combate
+Objetivo: Aplicar o buff ao inimigo no momento certo (antes da batalha).
+
+Tarefas:
+
+ Na lógica de geração de inimigos ao explorar um Local, verificar o bioma.
+
+ Se o inimigo for nativo do bioma, aplicar os buffs com inimigo.aplicarBuffBioma(biomaAtual)
+
+ Testar os efeitos dos buffs durante o combate.
+
+🌿 Módulo 4: Criar biomas e testá-los
+Objetivo: Criar exemplos práticos de biomas para testes.
+
+Tarefas:
+
+ Criar objetos Bioma: floresta, caverna, montanha, etc.
+
+ Associar inimigos nativos a cada bioma.
+
+ Testar diferentes combinações de inimigos e biomas.
+
+🎮 Módulo 5 (extra): Interface e feedback visual
+Objetivo: Melhorar a imersão do jogador com mensagens informativas.
+
+Tarefas:
+
+ Exibir mensagem ao encontrar inimigo em seu habitat natural.
+
+ Mostrar os buffs ativos durante a batalha.
+
